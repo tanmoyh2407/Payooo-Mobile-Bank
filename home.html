@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Payooo Mobile App</title>
+
+    <!-- DaisyUI & Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <h1>Home section check</h1>
+
+<body class="bg-[#f4f5f7] h-[100vh]">
+    <!-- Nav Section -->
+    <div class="min-h-[50px] flex justify-between items-center max-w-lg mx-auto border-b-1 border-gray-300 p-3">
+        <div class="flex items-center">
+            <img src="./assets/Group.png" alt="Group" class="h-[50px]">
+            <div class="ml-3">
+                <h1 class="font-bold">$<span>45000</span></h1>
+                <p class="text-[#08080880]">Available Balance</p>
+            </div>
+        </div>
+        <div>
+            <button class="btn text-[#08080880]"><i
+                    class="fa-solid fa-arrow-right-from-bracket rotate-180 text-gray-600"></i>Logout</button>
+        </div>
+    </div>
+
+    <!-- Welcome section -->
+    <div class="max-w-lg mx-auto mt-8">
+        <h1 class="text-2xl font-bold">🔥 Welcome to Payooo!</h1>
+        <p class="text-[#08080880]">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+    </div>
+    <!-- Main Section -->
+    <div class="border-2 min-h-[200px] grid grid-cols-3 max-w-lg mx-auto gap-3.5">
+        <div class="border-2 border-green-300 p-3 rounded-xl">
+            <img src="./assets/wallet1.png" alt="wallet" class="mx-auto">
+            <h2 class="text-center">Add Money</h2>
+        </div>
+        <div class="border-2 border-green-300 p-3 rounded-xl">
+            <img src="./assets/send1.png" alt="Cashout" class="mx-auto">
+            <h2 class="text-center">Cashout</h2>
+        </div>
+        <div class="border-2 border-green-300 p-3 rounded-xl">
+            <img src="./assets/money1.png" alt="Transer Money" class="mx-auto">
+            <h2 class="text-center">Transfer Money</h2>
+        </div>
+        <div class="border-2 border-green-300 p-3 rounded-xl">
+            <img src="./assets/bonus1.png" alt="Get Bonus" class="mx-auto">
+            <h2 class="text-center">Get Bonus</h2>
+        </div>
+        <div class="border-2 border-green-300 p-3 rounded-xl">
+            <img src="./assets/purse1.png" alt="Pay Bill" class="mx-auto">
+            <h2 class="text-center">Pay Bill</h2>
+        </div>
+        <div class="border-2 border-green-300 p-3 rounded-xl">
+            <img src="./assets/transaction1.png" alt="Transactions" class="mx-auto">
+            <h2 class="text-center">Transactions</h2>
+        </div>
+    </div>
+
+    <!-- javaScript file -->
+    <script src="./script.js"></script>
 </body>
+
 </html>
